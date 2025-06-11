@@ -1,0 +1,577 @@
+[
+  {
+    "id": "schizophrenia",
+    "name": "انفصام الشخصية",
+    "symptoms": [
+      "هلاوس",
+      "ضلالات",
+      "تفكير غير منتظم",
+      "تبلد المشاعر"
+    ],
+    "questions": [
+      {
+        "id": "hallucinations",
+        "question": "هل تسمع أصواتًا أو ترى أشياء غير موجودة؟",
+        "options": {
+          "yes": "delusions",
+          "no": "delusions"
+        }
+      },
+      {
+        "id": "delusions",
+        "question": "هل لديك معتقدات ثابتة غير مبنية على الواقع؟",
+        "options": {
+          "yes": "duration",
+          "no": "duration"
+        }
+      }
+    ],
+    "diagnosis_criteria": "2+ أعراض لمدة 6 أشهر",
+    "treatment": "أدوية مضادة للذهان + تأهيل نفسي اجتماعي"
+  },
+  {
+    "id": "borderline",
+    "name": "اضطراب الشخصية الحدية",
+    "symptoms": [
+      "تقلبات مزاجية حادة",
+      "علاقات غير مستقرة",
+      "خوف من الهجر",
+      "سلوك اندفاعي"
+    ],
+    "questions": [
+      {
+        "id": "mood_swings",
+        "question": "هل تعاني من تقلبات مزاجية حادة خلال ساعات؟",
+        "options": {
+          "yes": "impulsivity",
+          "no": null
+        }
+      },
+      {
+        "id": "impulsivity",
+        "question": "هل تقوم بسلوكيات متهورة (إنفاق، جنس غير آمن)؟",
+        "options": {
+          "yes": "relationships",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "5+ أعراض وفق DSM-5",
+    "treatment": "العلاج الجدلي السلوكي (DBT)"
+  },
+  {
+    "id": "dissociative",
+    "name": "اضطراب تعدد الشخصية",
+    "symptoms": [
+      "فقدان الذاكرة",
+      "وجود هويات متعددة",
+      "انفصال عن الواقع"
+    ],
+    "questions": [
+      {
+        "id": "amnesia",
+        "question": "هل لديك فجوات في الذاكرة لأحداث مهمة؟",
+        "options": {
+          "yes": "identities",
+          "no": null
+        }
+      },
+      {
+        "id": "identities",
+        "question": "هل يشعرك الآخرون أنك شخصيات مختلفة؟",
+        "options": {
+          "yes": "distress",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "وجود هويتين أو أكثر",
+    "treatment": "علاج نفسي طويل الأمد + دمج الهويات"
+  },
+  {
+    "id": "paranoia",
+    "name": "اضطراب الشخصية الارتيابية",
+    "symptoms": [
+      "شكوك دائمة",
+      "حساسية مفرطة",
+      "عناد"
+    ],
+    "questions": [
+      {
+        "id": "mistrust",
+        "question": "هل تشك باستمرار في نوايا الآخرين؟",
+        "options": {
+          "yes": "grudges",
+          "no": null
+        }
+      },
+      {
+        "id": "grudges",
+        "question": "هل تحمل ضغينة لفترات طويلة؟",
+        "options": {
+          "yes": "perception",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "4+ أعراض وفق DSM-5",
+    "treatment": "علاج معرفي سلوكي مكثف"
+  },
+  {
+    "id": "adjustment",
+    "name": "اضطراب التكيف",
+    "symptoms": [
+      "قلق",
+      "اكتئاب",
+      "صعوبة في العمل"
+    ],
+    "questions": [
+      {
+        "id": "stressor",
+        "question": "هل مررت بحدث ضاغط مؤخرًا (خسارة وظيفة/طلاق)؟",
+        "options": {
+          "yes": "reaction",
+          "no": null
+        }
+      },
+      {
+        "id": "reaction",
+        "question": "هل أثر هذا الحدث على حياتك اليومية؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض خلال 3 أشهر من الحدث",
+    "treatment": "دعم نفسي + علاج قصير المدى"
+  },
+  {
+    "id": "somatic",
+    "name": "اضطراب الأعراض الجسدية",
+    "symptoms": [
+      "أعراض جسدية متعددة",
+      "قلق صحي مفرط"
+    ],
+    "questions": [
+      {
+        "id": "symptoms",
+        "question": "هل تعاني من آلام أو أعراض جسدية متعددة؟",
+        "options": {
+          "yes": "concern",
+          "no": null
+        }
+      },
+      {
+        "id": "concern",
+        "question": "هل تقلق بشكل مفرط على صحتك؟",
+        "options": {
+          "yes": "medical_tests",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض لمدة 6+ أشهر",
+    "treatment": "علاج معرفي سلوكي متخصص"
+  },
+  {
+    "id": "hoarding",
+    "name": "اضطراب الاكتناز",
+    "symptoms": [
+      "صعوبة التخلص من الممتلكات",
+      "تراكم أشياء غير ضرورية"
+    ],
+    "questions": [
+      {
+        "id": "discarding",
+        "question": "هل تجد صعوبة شديدة في التخلص من الأشياء؟",
+        "options": {
+          "yes": "clutter",
+          "no": null
+        }
+      },
+      {
+        "id": "clutter",
+        "question": "هل تعيق هذه الأشياء استخدام مساحات المعيشة؟",
+        "options": {
+          "yes": "distress",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "تأثير سلبي على الحياة اليومية",
+    "treatment": "علاج معرفي سلوكي متخصص"
+  },
+  {
+    "id": "trichotillomania",
+    "name": "هوس نتف الشعر",
+    "symptoms": [
+      "نتف متكرر للشعر",
+      "توتر قبل النتف",
+      "راحة بعد النتف"
+    ],
+    "questions": [
+      {
+        "id": "pulling",
+        "question": "هل تنتف شعرك بشكل متكرر؟",
+        "options": {
+          "yes": "attempts",
+          "no": null
+        }
+      },
+      {
+        "id": "attempts",
+        "question": "هل حاولت التوقف دون نجاح؟",
+        "options": {
+          "yes": "distress",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "نتف متكرر يؤدي لفقدان ملحوظ للشعر",
+    "treatment": "علاج سلوكي + أدوية (مثل SSRIs)"
+  },
+  {
+    "id": "dermatillomania",
+    "name": "اضطراب نتف الجلد",
+    "symptoms": [
+      "تقشير الجلد",
+      "محاولات فاشلة للتوقف"
+    ],
+    "questions": [
+      {
+        "id": "picking",
+        "question": "هل تقوم بتقشير جلدك بشكل متكرر؟",
+        "options": {
+          "yes": "damage",
+          "no": null
+        }
+      },
+      {
+        "id": "damage",
+        "question": "هل سبب هذا تقرحات أو ندوب؟",
+        "options": {
+          "yes": "attempts",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "سلوك متكرر يسبب أضرارًا جلدية",
+    "treatment": "علاج سلوكي + إدارة التوتر"
+  },
+  {
+    "id": "gender_dysphoria",
+    "name": "اضطراب الهوية الجندرية",
+    "symptoms": [
+      "انزعاج من الجنس البيولوجي",
+      "رغبة بالانتماء للجنس الآخر"
+    ],
+    "questions": [
+      {
+        "id": "discomfort",
+        "question": "هل تشعر بعدم ارتياح مع جنسك البيولوجي؟",
+        "options": {
+          "yes": "desire",
+          "no": null
+        }
+      },
+      {
+        "id": "desire",
+        "question": "هل ترغب بالعيش كالجنس الآخر؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض لمدة 6+ أشهر",
+    "treatment": "دعم نفسي + علاج هرموني/جراحي عند الرغبة"
+  },
+  {
+    "id": "paraphilia",
+    "name": "الاضطرابات الجنسية",
+    "symptoms": [
+      "اهتمامات جنسية غير نمطية",
+      "ضيق ذاتي أو ضرر للآخرين"
+    ],
+    "questions": [
+      {
+        "id": "fantasies",
+        "question": "هل لديك رغبات جنسية غير معتادة؟",
+        "options": {
+          "yes": "distress",
+          "no": null
+        }
+      },
+      {
+        "id": "distress",
+        "question": "هل تسبب هذه الرغبات ضائقة أو مشاكل؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض لمدة 6+ أشهر",
+    "treatment": "علاج معرفي سلوكي متخصص"
+  },
+  {
+    "id": "delirium",
+    "name": "الهذيان",
+    "symptoms": [
+      "توهان",
+      "تغير في الوعي",
+      "اضطراب الانتباه"
+    ],
+    "questions": [
+      {
+        "id": "consciousness",
+        "question": "هل لديك تقلبات في مستوى الوعي؟",
+        "options": {
+          "yes": "attention",
+          "no": null
+        }
+      },
+      {
+        "id": "attention",
+        "question": "هل تواجه صعوبة في التركيز أو تتبع الحديث؟",
+        "options": {
+          "yes": "acute",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "ظهور مفاجئ (ساعات/أيام)",
+    "treatment": "علاج السبب الطبي + داعم"
+  },
+  {
+    "id": "neurocognitive",
+    "name": "الاضطرابات العصبية المعرفية",
+    "symptoms": [
+      "ضعف الذاكرة",
+      "صعوبة في الكلام",
+      "تغيرات شخصية"
+    ],
+    "questions": [
+      {
+        "id": "memory",
+        "question": "هل لديك مشاكل متزايدة في الذاكرة؟",
+        "options": {
+          "yes": "language",
+          "no": null
+        }
+      },
+      {
+        "id": "language",
+        "question": "هل تواجه صعوبة في العثور على الكلمات؟",
+        "options": {
+          "yes": "progression",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "تراجع في الوظائف المعرفية",
+    "treatment": "إدارة الأعراض + علاج السبب إن أمكن"
+  },
+  {
+    "id": "factitious",
+    "name": "اضطراب اصطناعي",
+    "symptoms": [
+      "تزيف الأعراض",
+      "طلب للعلاج",
+      "سفر بين المستشفيات"
+    ],
+    "questions": [
+      {
+        "id": "fabrication",
+        "question": "هل يتصرف الشخص وكأنه مريض دون سبب واضح؟",
+        "options": {
+          "yes": "evidence",
+          "no": null
+        }
+      },
+      {
+        "id": "evidence",
+        "question": "هل هناك تناقض بين الشكاوى والفحوصات؟",
+        "options": {
+          "yes": "motivation",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "سلوك متعمد لتقمص دور المريض",
+    "treatment": "علاج نفسي مكثف"
+  },
+  {
+    "id": "pyromania",
+    "name": "هوس إشعال الحرائق",
+    "symptoms": [
+      "إشعال متكرر للحريق",
+      "توتر قبل الفعل",
+      "متعة أثناء الحريق"
+    ],
+    "questions": [
+      {
+        "id": "fire_setting",
+        "question": "هل تقوم بإشعال الحرائق عمدًا؟",
+        "options": {
+          "yes": "motivation",
+          "no": null
+        }
+      },
+      {
+        "id": "motivation",
+        "question": "هل تشعر بإثارة أو راحة عند إشعالها؟",
+        "options": {
+          "yes": "attempts",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "سلوك متكرر غير مبرر",
+    "treatment": "علاج سلوكي + إدارة الغضب"
+  },
+  {
+    "id": "kleptomania",
+    "name": "هوس السرقة",
+    "symptoms": [
+      "سرقة أشياء غير ضرورية",
+      "توتر قبل السرقة",
+      "راحة بعدها"
+    ],
+    "questions": [
+      {
+        "id": "stealing",
+        "question": "هل تسرق أشياء لا تحتاجها؟",
+        "options": {
+          "yes": "motivation",
+          "no": null
+        }
+      },
+      {
+        "id": "motivation",
+        "question": "هل تشعر بتوتر قبل السرقة وراحة بعدها؟",
+        "options": {
+          "yes": "attempts",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "سرقة غير مبررة اقتصاديًا",
+    "treatment": "علاج معرفي سلوكي + أدوية"
+  },
+  {
+    "id": "nightmare",
+    "name": "اضطراب الكوابيس",
+    "symptoms": [
+      "كوابيس متكررة",
+      "استيقاظ مفزع",
+      "صعوبة العودة للنوم"
+    ],
+    "questions": [
+      {
+        "id": "frequency",
+        "question": "هل تعاني من كوابيس متكررة؟",
+        "options": {
+          "yes": "distress",
+          "no": null
+        }
+      },
+      {
+        "id": "distress",
+        "question": "هل تؤثر هذه الكوابيس على نومك أو مزاجك؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "كوابيس 1+ أسبوعيًا لمدة 3 أشهر",
+    "treatment": "علاج بالتعرض + إدارة التوتر"
+  },
+  {
+    "id": "sleep_terror",
+    "name": "ذعر النوم",
+    "symptoms": [
+      "صراخ مفاجئ أثناء النوم",
+      "خوف شديد",
+      "عدم تذكر الحادثة"
+    ],
+    "questions": [
+      {
+        "id": "episodes",
+        "question": "هل تصرخ أو تبدو مرعوبًا أثناء النوم؟",
+        "options": {
+          "yes": "amnesia",
+          "no": null
+        }
+      },
+      {
+        "id": "amnesia",
+        "question": "هل لا تتذكر الحادثة صباحًا؟",
+        "options": {
+          "yes": "frequency",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "نوبات متكررة تسبب ضائقة",
+    "treatment": "تحسين نظافة النوم + علاج السبب"
+  },
+  {
+    "id": "substance_induced",
+    "name": "الاضطرابات الناجمة عن المواد",
+    "symptoms": [
+      "هلاوس",
+      "ضلالات",
+      "تقلبات مزاجية"
+    ],
+    "questions": [
+      {
+        "id": "substance_use",
+        "question": "هل تتعاطى مواد مخدرة أو كحول؟",
+        "options": {
+          "yes": "symptoms",
+          "no": null
+        }
+      },
+      {
+        "id": "symptoms",
+        "question": "هل تظهر الأعراض أثناء أو بعد التعاطي؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض خلال شهر من التعاطي",
+    "treatment": "إزالة السموم + علاج الإدمان"
+  },
+  {
+    "id": "pica",
+    "name": "اضطراب بيكا",
+    "symptoms": [
+      "أكل مواد غير غذائية (تراب، طلاء)"
+    ],
+    "questions": [
+      {
+        "id": "consumption",
+        "question": "هل تأكل مواد غير غذائية؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      },
+      {
+        "id": "duration",
+        "question": "هل يستمر هذا السلوك شهرًا أو أكثر؟",
+        "options": {
+          "yes": "nutrition",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أكل مواد غير غذائية لمدة شهر+",
+    "treatment": "تعديل سلوكي + علاج نقص التغذية"
+  }
+]
