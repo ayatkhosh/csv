@@ -49,7 +49,7 @@
       },
       {
         "id": "impulsivity",
-        "question": "هل تقوم بسلوكيات متهورة (إنفاق، جنس غير آمن)؟",
+        "question": "هل تقوم بسلوكيات متهورة (إنفاق، قيادة خطرة)؟",
         "options": {
           "yes": "relationships",
           "no": null
@@ -258,62 +258,6 @@
     ],
     "diagnosis_criteria": "سلوك متكرر يسبب أضرارًا جلدية",
     "treatment": "علاج سلوكي + إدارة التوتر"
-  },
-  {
-    "id": "gender_dysphoria",
-    "name": "اضطراب الهوية الجندرية",
-    "symptoms": [
-      "انزعاج من الجنس البيولوجي",
-      "رغبة بالانتماء للجنس الآخر"
-    ],
-    "questions": [
-      {
-        "id": "discomfort",
-        "question": "هل تشعر بعدم ارتياح مع جنسك البيولوجي؟",
-        "options": {
-          "yes": "desire",
-          "no": null
-        }
-      },
-      {
-        "id": "desire",
-        "question": "هل ترغب بالعيش كالجنس الآخر؟",
-        "options": {
-          "yes": "duration",
-          "no": null
-        }
-      }
-    ],
-    "diagnosis_criteria": "أعراض لمدة 6+ أشهر",
-    "treatment": "دعم نفسي + علاج هرموني/جراحي عند الرغبة"
-  },
-  {
-    "id": "paraphilia",
-    "name": "الاضطرابات الجنسية",
-    "symptoms": [
-      "اهتمامات جنسية غير نمطية",
-      "ضيق ذاتي أو ضرر للآخرين"
-    ],
-    "questions": [
-      {
-        "id": "fantasies",
-        "question": "هل لديك رغبات جنسية غير معتادة؟",
-        "options": {
-          "yes": "distress",
-          "no": null
-        }
-      },
-      {
-        "id": "distress",
-        "question": "هل تسبب هذه الرغبات ضائقة أو مشاكل؟",
-        "options": {
-          "yes": "duration",
-          "no": null
-        }
-      }
-    ],
-    "diagnosis_criteria": "أعراض لمدة 6+ أشهر",
-    "treatment": "علاج معرفي سلوكي متخصص"
   },
   {
     "id": "delirium",
@@ -573,5 +517,242 @@
     ],
     "diagnosis_criteria": "أكل مواد غير غذائية لمدة شهر+",
     "treatment": "تعديل سلوكي + علاج نقص التغذية"
+  },
+  {
+    "id": "depression",
+    "name": "الاكتئاب الشديد",
+    "symptoms": [
+      "حزن مستمر",
+      "فقدان المتعة",
+      "نقص الطاقة",
+      "مشاكل نوم",
+      "أفكار انتحارية"
+    ],
+    "questions": [
+      {
+        "id": "sadness",
+        "question": "هل تشعر بالحزن معظم الوقت خلال الأسبوعين الماضيين؟",
+        "options": {
+          "yes": "pleasure_loss",
+          "no": null
+        }
+      },
+      {
+        "id": "pleasure_loss",
+        "question": "هل فقدت اهتمامك بأشياء كنت تستمتع بها؟",
+        "options": {
+          "yes": "energy",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "5+ أعراض لمدة أسبوعين أو أكثر",
+    "treatment": "علاج معرفي سلوكي + أدوية مضادة للاكتئاب"
+  },
+  {
+    "id": "gad",
+    "name": "اضطراب القلق العام",
+    "symptoms": [
+      "قلق مفرط",
+      "توتر عضلي",
+      "صعوبة تركيز",
+      "اضطراب نوم"
+    ],
+    "questions": [
+      {
+        "id": "worry",
+        "question": "هل تشعر بقلق مفرط يصعب السيطرة عليه معظم الأيام؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      },
+      {
+        "id": "duration",
+        "question": "هل استمر هذا القلق لأكثر من 6 أشهر؟",
+        "options": {
+          "yes": "physical",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "قلق زائد + 3 أعراض لمدة 6 أشهر",
+    "treatment": "علاج معرفي سلوكي + تمارين استرخاء"
+  },
+  {
+    "id": "ocd",
+    "name": "الوسواس القهري",
+    "symptoms": [
+      "أفكار متكررة مزعجة",
+      "سلوكيات قهرية",
+      "قلق"
+    ],
+    "questions": [
+      {
+        "id": "obsessions",
+        "question": "هل تراودك أفكار متكررة غير مرغوبة؟",
+        "options": {
+          "yes": "compulsions",
+          "no": null
+        }
+      },
+      {
+        "id": "compulsions",
+        "question": "هل تقوم بأفعال متكررة لتقليل القلق؟",
+        "options": {
+          "yes": "time",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أفكار + سلوكيات قهرية ساعة+ يومياً",
+    "treatment": "علاج معرفي سلوكي + أدوية (SSRIs)"
+  },
+  {
+    "id": "ptsd",
+    "name": "اضطراب ما بعد الصدمة",
+    "symptoms": [
+      "ذكريات مزعجة",
+      "كوابيس",
+      "تجنب المحفزات",
+      "فرط اليقظة"
+    ],
+    "questions": [
+      {
+        "id": "trauma",
+        "question": "هل تعرضت لحدث صادم يهدد الحياة؟",
+        "options": {
+          "yes": "flashbacks",
+          "no": null
+        }
+      },
+      {
+        "id": "flashbacks",
+        "question": "هل تعاني من ذكريات متكررة غير مرغوب بها؟",
+        "options": {
+          "yes": "avoidance",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "تعرض لصدمة + أعراض لمدة شهر",
+    "treatment": "علاج بالتعرض + EMDR"
+  },
+  {
+    "id": "panic",
+    "name": "اضطراب الهلع",
+    "symptoms": [
+      "نوبات خوف مفاجئة",
+      "خفقان",
+      "رعشة",
+      "خوف من الموت"
+    ],
+    "questions": [
+      {
+        "id": "panic_attacks",
+        "question": "هل تصاب بنوبات مفاجئة من الخوف الشديد؟",
+        "options": {
+          "yes": "frequency",
+          "no": null
+        }
+      },
+      {
+        "id": "frequency",
+        "question": "هل تكررت هذه النوبات عدة مرات خلال شهر؟",
+        "options": {
+          "yes": "anticipatory",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "4+ نوبات في شهر",
+    "treatment": "علاج معرفي سلوكي + أدوية (SSRIs)"
+  },
+  {
+    "id": "bipolar",
+    "name": "اضطراب ثنائي القطب",
+    "symptoms": [
+      "نوبات هوس",
+      "نوبات اكتئاب",
+      "تقلبات مزاجية"
+    ],
+    "questions": [
+      {
+        "id": "mania",
+        "question": "هل مررت بفترات نشاط مفرط وقلة نوم لشهر أو أكثر؟",
+        "options": {
+          "yes": "mania_duration",
+          "no": null
+        }
+      },
+      {
+        "id": "mania_duration",
+        "question": "هل استمرت هذه الفترة 7 أيام أو أكثر؟",
+        "options": {
+          "yes": "depressive_episodes",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "نوبة هوس + نوبة اكتئاب",
+    "treatment": "مثبتات مزاج + متابعة طبية"
+  },
+  {
+    "id": "social_phobia",
+    "name": "الرهاب الاجتماعي",
+    "symptoms": [
+      "خوف من المواقف الاجتماعية",
+      "تجنب اللقاءات",
+      "قلق شديد"
+    ],
+    "questions": [
+      {
+        "id": "social_fear",
+        "question": "هل تخشى من التحدث أو الأكل أو الكتابة أمام الآخرين؟",
+        "options": {
+          "yes": "avoidance",
+          "no": null
+        }
+      },
+      {
+        "id": "avoidance",
+        "question": "هل تتجنب المواقف الاجتماعية خوفاً من الإحراج؟",
+        "options": {
+          "yes": "duration",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "خوف وتجنب لأكثر من 6 أشهر",
+    "treatment": "علاج معرفي سلوكي + مجموعات دعم"
+  },
+  {
+    "id": "adhd",
+    "name": "اضطراب فرط الحركة وتشتت الانتباه",
+    "symptoms": [
+      "تشتت انتباه",
+      "فرط حركة",
+      "اندفاعية"
+    ],
+    "questions": [
+      {
+        "id": "attention",
+        "question": "هل تواجه صعوبة في التركيز لفترات طويلة؟",
+        "options": {
+          "yes": "hyperactivity",
+          "no": null
+        }
+      },
+      {
+        "id": "hyperactivity",
+        "question": "هل لديك نشاط زائد أو لا تستطيع البقاء هادئاً؟",
+        "options": {
+          "yes": "impulsivity",
+          "no": null
+        }
+      }
+    ],
+    "diagnosis_criteria": "أعراض منذ الطفولة قبل سن 12",
+    "treatment": "تأهيل سلوكي + أدوية منشطة"
   }
 ]
